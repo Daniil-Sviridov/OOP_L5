@@ -132,11 +132,14 @@ namespace OOP_L5
 
         public static Ratio operator ++(Ratio obj)
         {
+            obj._m = obj.M + obj.N;
             return obj;
         }
 
         public static Ratio operator --(Ratio obj)
         {
+            obj._m = obj.M - obj.N;
+
             return obj;
         }
     }
